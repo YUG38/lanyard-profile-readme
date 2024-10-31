@@ -269,7 +269,7 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
-                                padding: 5px;
+                                padding: 20px;
                             ">
                                 <div style="
                                     display: flex;
