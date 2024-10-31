@@ -338,9 +338,7 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                                         margin: 0;
                                         color: ${theme === "dark" ? "#aaa" : "#333"};
                                         font-weight: 400;
-                                        overflow: hidden;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
+                                        white-space: normal;
                                     ">
                                     ${
                                         userStatus.emoji?.id ? `
