@@ -323,6 +323,7 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                                 ${showDisplayName ? 
                                     `<h2 style="
                                         font-size: 0.95rem;
+                                        margin: 0;
                                         white-space: nowrap;
                                         font-weight: 400;
                                     ">
