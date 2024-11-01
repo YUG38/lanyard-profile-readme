@@ -274,11 +274,14 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                                     display: flex;
                                     flex-direction: row;
                                     height: 25px;
+                                    align-items: center;
+                                    margin-bottom: 4px;
                                 ">
                                     <h1 style="
                                         font-size: 1.15rem;
                                         margin: 0 12px 0 0;
                                         white-space: nowrap;
+                                        line-height: 1.2;
                                     ">
                                         ${escape(showDisplayName ? data.discord_user.global_name : data.discord_user.username)}${
                                             !hideDiscrim && !showDisplayName
@@ -323,9 +326,10 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                                 ${showDisplayName ? 
                                     `<h2 style="
                                         font-size: 0.95rem;
-                                        margin: 0;
+                                        margin: 0 0 4px 0;
                                         white-space: nowrap;
                                         font-weight: 400;
+                                        line-height: 1.2;
                                     ">
                                         ${escape(data.discord_user.username)}
                                     </h2>` 
@@ -339,6 +343,7 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                                         color: ${theme === "dark" ? "#aaa" : "#333"};
                                         font-weight: 400;
                                         white-space: normal;
+                                        line-height: 1.2;
                                     ">
                                     ${
                                         userStatus.emoji?.id ? `
